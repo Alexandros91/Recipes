@@ -42,24 +42,24 @@ RSpec.describe RecipeRepository do
 
       recipe = repo.find(1)
 
-      expect(recipe.id).to eq 1
+      expect(recipe.id).to eq '1'
       expect(recipe.name).to eq 'Mosxari Giouvetsi'
-      expect(recipe.cooking_time).to eq 75
-      expect(recipe.rating).to eq 5
+      expect(recipe.cooking_time).to eq '75'
+      expect(recipe.rating).to eq '5'
 
       recipe = repo.find(2)
 
-      expect(recipe.id).to eq 2
+      expect(recipe.id).to eq '2'
       expect(recipe.name).to eq 'Arni Frikase'
-      expect(recipe.cooking_time).to eq 90
-      expect(recipe.rating).to eq 4
+      expect(recipe.cooking_time).to eq '90'
+      expect(recipe.rating).to eq '4'
 
       recipe = repo.find(3)
 
-      expect(recipe.id).to eq 3
+      expect(recipe.id).to eq '3'
       expect(recipe.name).to eq 'Fakes'
-      expect(recipe.cooking_time).to eq 40
-      expect(recipe.rating).to eq 4
+      expect(recipe.cooking_time).to eq '40'
+      expect(recipe.rating).to eq '4'
     end
   end
 end
